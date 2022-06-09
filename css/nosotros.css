@@ -1,0 +1,159 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    min-height: 100%;
+    position: relative;
+  }
+  body {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+.section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor{
+    margin: 20px;
+
+    display:flexbox;
+    /* display: inline-flex; */
+    
+
+    cursor: pointer;
+}
+
+.contenedor figure{
+    position:sticky;
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 109, 137, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.contenedor figure:hover > img{
+transform: scale(1.3);
+}
+
+.contenedor figure:hover > .capa h2{
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+.contenedor figure .capa h2{
+color:white;
+font-weight:600;
+transition: all 500ms ease-out;
+margin-top: 20px;
+}
+
+.contenedor figure .capa p{
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100% ;
+    max-width: 300px;
+    transition: all 500ms ease-out;
+    margin: auto;
+}
+.piePagina{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+.foot_ul_responsive{
+    display: none;
+}
+nav{
+    background-color: white;
+}
+.foot_li{
+    display: inline-block;
+    padding: 20px;
+
+}
+.textfoot{
+    color: gray;
+}
+.foot_li a:hover{
+    color: blue;
+}
+.foot_face{
+    display: inline-block;
+}
+.face{
+    position:absolute ;
+    left: 83%;
+    font-size: 40px;
+    color: blue;
+}
+.twitter{
+    position: absolute;
+    left: 79%;
+    font-size: 40px;
+    color: rgb(21, 113, 188);
+}
+.foot_ul_responsive{
+    text-align: center;
+}
+.foot_responsive{
+    padding: 2%;
+    display: block;
+}
+.textResponsive{
+    color: gray;
+   
+}
+.face_responsive{
+    font-size: 30px;
+    color: blue;
+}
+.twitter_responsive{
+    font-size: 30px;
+    color: rgb(21, 113, 188);
+}
+@media only screen and (max-width: 1070px){
+    .face{
+        left: 85%;
+    }
+    .twitter{
+        left: 81%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .foot_ul{
+        display: none;
+    }
+    .foot_ul_responsive{
+        display: block;
+    }
+}
