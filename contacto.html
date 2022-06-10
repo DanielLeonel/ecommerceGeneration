@@ -40,31 +40,32 @@
         </div>
         <div class="row alto align-items-center justify-content-center gx-5">
           <div class="col-12">
-      <form class="row g-3 needs-validation" novalidate>
+
+      <form action="https://formsubmit.co/a40070eca998d9bca948364eaa693032" method="POST" class="row g-3 needs-validation" novalidate>
           <div class="col-md-6">
           <label for="validationCustom01" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="validationCustom01" required>
+          <input name="name" type="text" class="form-control" id="validationCustom01" required>
           <div class="valid-feedback">
             Correcto
           </div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom02" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="validationCustom01" required>
+          <input name="last-name" type="text" class="form-control" id="validationCustom01" required>
           <div class="valid-feedback">
             Correcto
           </div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom01" class="form-label">Teléfono</label>
-          <input type="number" class="form-control" id="validationCustom01" required>
+          <input name="phone" type="number" class="form-control" id="validationCustom01" required>
           <div class="valid-feedback">
             Correcto
           </div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom02" class="form-label">Email</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="alfadesigners@ejemplo.com" required>
+          <input name="email" type="text" class="form-control" id="validationCustom01" placeholder="alfadesigners@ejemplo.com" required>
           <div class="valid-feedback">
             Correcto
           </div>
@@ -72,7 +73,7 @@
         
             <div class="mb-3">
               <label for="validationTextarea" class="form-label">Comentarios</label>
-              <textarea class="form-control" id="validationTextarea" placeholder="Mensaje" required></textarea>
+              <textarea name="comments" class="form-control" id="validationTextarea" placeholder="Mensaje" required></textarea>
               <div class="invalid-feedback">
                 Ingresa el texto
               </div>
@@ -93,6 +94,9 @@
         <div class="col-12">
           <button class="btn btn-primary" type="submit">Enviar</button>
         </div>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto.html">
+        <input type="hidden" name="_captcha" value="false" id="">
+
       </form>
           </div>
           
