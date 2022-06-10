@@ -85,3 +85,14 @@ nav{
         display: block;
     }
 }
+/*Formulario*/
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+
+.alto{
+    height: 700px;
+    /*background-color: red;*/
+  }
