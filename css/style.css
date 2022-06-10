@@ -1,0 +1,73 @@
+body
+{
+	background:#fffcfc;
+	/* background-image:url("/img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.webp"); */
+	font-size:18;
+    
+
+}
+#body1
+{
+	background:#fffefe;
+	/* background-image:url("/img/about\ us.webp"); */
+	font-size:18;
+    
+
+}
+#agrupar
+{
+	width:960px;
+	margin:15px auto;
+	text-aling:left;
+}
+#cabezera
+{
+	background:#a3d2f1;
+	border:9px solid #ffffff;
+	padding:10px;
+	text-color:rgb(0, 0, 0);
+}
+#cabezera h1
+{
+	text-align:center;
+}
+#cabezera img
+{
+	float:left;
+	margin:-15px auto;
+}
+#menu
+{
+	background:#ffffff;;
+	text-color:white;
+}
+#menu li
+{
+	display:inline-block;
+	list-style:none;
+	padding:5px;
+	font:<font face="Comic Sans MS,arial,verdana">
+	font-size:3;
+	
+}
+
+#card{
+	border:5px solid #131313;
+	padding:15px;
+	margin: 20px;
+}
+#card1{
+	border:5px solid #131313;
+	padding:15px;
+	margin: 20px
+}
+#card2{
+	border:5px solid #131313;
+	padding:15px;
+	margin: 20px;
+
+}
+#carouselExampleIndicators{
+	padding:5px;
+	margin:15px auto;
+}
