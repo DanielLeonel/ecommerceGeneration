@@ -87,3 +87,23 @@ nav{
         display: block;
     }
 }
+#producto{
+   
+
+    padding:2px;
+
+}
+#total{
+    
+
+    padding:2px;
+
+}
+#btn{
+    height:50px; 
+    width:290px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:80%;
+}
