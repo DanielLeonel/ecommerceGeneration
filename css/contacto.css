@@ -42,13 +42,13 @@ nav{
     position:absolute ;
     left: 83%;
     font-size: 40px;
-    color: blue;
+    color: black;
 }
 .twitter{
     position: absolute;
     left: 79%;
     font-size: 40px;
-    color: rgb(21, 113, 188);
+    color: black;
 }
 .foot_ul_responsive{
     text-align: center;
@@ -63,12 +63,42 @@ nav{
 }
 .face_responsive{
     font-size: 30px;
-    color: blue;
+    color: black;
 }
 .twitter_responsive{
     font-size: 30px;
-    color: rgb(21, 113, 188);
+    color: black;
 }
+#ColorInicio{
+    color: black;
+    }
+#ColorProductos{
+    color: black;
+    }
+#ColorServicios{
+    color: black;
+    }
+#ColorNosotros{
+    color: black;
+    }
+#ColorContacto{
+    color: blue;
+    }
+    #ColorInicio:hover{
+        color: blue;
+        }
+    #ColorProductos:hover{
+        color: blue;
+        }
+    #ColorServicios:hover{
+        color: blue;
+        }
+    #ColorNosotros:hover{
+        color: blue;
+        }
+    #ColorContacto:hover{
+        color: blue;
+        }   
 @media only screen and (max-width: 1070px){
     .face{
         left: 85%;
@@ -97,9 +127,4 @@ html, body {
 
 .alto{
     height: 700px;
-    /*background-color: red;*/
-<<<<<<< HEAD
-  }
-=======
-  }
->>>>>>> arturo
+    /*background-color: red;*/}
