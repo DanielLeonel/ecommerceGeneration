@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/contacto.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <div id="BarraNavegacion">
+    <!--Barra de navejación en JS-->
+  </div>
+  <main>
+    <div class="container-fluid d-flex justify-content-center mt-2">
+        <div class="row alto align-items-center">
+            <div class="d-none d-sm-block col-md-12">
+                <img class="img-fluid" src="./img/up.svg" alt="Imagen Contacto" width="1000px" height="auto" />
+            </div>
+        </div>
+        <div class="row alto align-items-center justify-content-center">
+            <div class="col-12">
+                <form id="formulario" class="row g-3 needs-validation" novalidate>
+                    <h1>Producto</h1>
+                    <div class="col-12 col-md-12">
+                        <label id="nombreProducto" for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="textarea" class="form-control" id="validationCustom01" required />
+                        <div class="valid-feedback">Se ve bien</div>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <label id="urlProducto" for="validationCustom02" class="form-label">URL imagen</label>
+                        <input type="text" class="form-control" id="validationCustom02" required />
+                        <div class="valid-feedback">Se ve bien</div>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <label id="descripcionProducto" for="validationCustom03"
+                            class="form-label">Descripción</label>
+                        <input type="textarea" class="form-control" id="validationCustom03" required />
+                        <div class="valid-feedback">Se ve bien</div>
+                    </div>
+                    <div class="d-grid gap-2 mt-5">
+                        <button id="btnEnviar" class="btn btn-primary" type="submit">
+                            Cargar
+                        </button>
+                        <button id="btnCargando" class="btn btn-secondary d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Subiendo producto ...
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ALIGN TOAST -->
+<div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex bg-primary text-white">
+      <div class="toast-body">
+        ✔ Producto subido con éxito.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+<!-- TOAST END -->
+  <div id="PieDePagina">
+    <!--Pie de página en JS-->
+  </div>
+  <script src="/js/contacto.js"></script>
+  <script src="https://kit.fontawesome.com/a2fde8c980.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/contacto.js"></script>
+  <script src="./js/carga-producto.js"></script>
+</body>
+
+</html>

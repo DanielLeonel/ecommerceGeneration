@@ -128,4 +128,11 @@ html, body {
 .alto{
     height: 650px;
     margin: auto;
-    /*background-color: red;*/}
+    /*background-color: red;*/
+}
+
+.toast {
+    position: absolute;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
