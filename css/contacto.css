@@ -126,5 +126,6 @@ html, body {
 
 
 .alto{
-    height: 700px;
+    height: 650px;
+    margin: auto;
     /*background-color: red;*/}
