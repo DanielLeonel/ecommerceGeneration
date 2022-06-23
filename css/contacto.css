@@ -126,5 +126,13 @@ html, body {
 
 
 .alto{
-    height: 700px;
-    /*background-color: red;*/}
+    height: 650px;
+    margin: auto;
+    /*background-color: red;*/
+}
+
+.toast {
+    position: absolute;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
