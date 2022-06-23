@@ -64,10 +64,11 @@ We are Alpha Designers -- Ecommerce
 
 <a href="https://www.linkedin.com/in/arturocontreraschaparro"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Arturo%20Contreras-blue?style=flat-square&logo=linkedin"></a>
 
-<a href="https://www.linkedin.com/in/brenda-granados-de-la-parra/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Brenda%Granados-blue?style=flat-square&logo=linkedin"></a>
+<a href="https://www.linkedin.com/in/brenda-granados-de-la-parra/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Brenda%20Granados-blue?style=flat-square&logo=linkedin"></a>
+  
+  <a href="https://www.linkedin.com/in/mauricio-flores-cervantes/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Mauricio%20Flores-blue?style=flat-square&logo=linkedin"></a>
+  
 <a href="https://www.linkedin.com/in/maria-guadalupe-santos-loaiza/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Guadalupe%20Santos-blue?style=flat-square&logo=linkedin"></a>
-
-<a href="https://www.linkedin.com/in/mauricio-flores-cervantes/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Mauricio%20Flores-blue?style=flat-square&logo=linkedin"></a>
 
 <a href="https://www.linkedin.com/in/anelmontesdeoca/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Anel%20Montes-blue?style=flat-square&logo=linkedin"></a>
 
