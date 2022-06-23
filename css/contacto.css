@@ -119,18 +119,6 @@ nav{
     }
 }
 /*Formulario*/
-html, body {
-    height: 100%;
-    width: 100%;
-  }
-
-
-.alto{
-    height: 650px;
-    margin: auto;
-    /*background-color: red;*/
-}
-
 .toast {
     position: absolute;
     margin-bottom: 40px;
