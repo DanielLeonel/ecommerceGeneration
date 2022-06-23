@@ -17,8 +17,8 @@ navBar.innerHTML=`<nav class="navbar navbar-expand-lg border-bottom" id="menu">
    </ul>
    <div class="col-md-3 mr-auto text-center text-end">
      <a href="/carrito.html"><button type="button" class="btn btn-outline-primary me-2"><i class="fa-solid fa-cart-shopping"></i></button></a>
-     <a href="/inicioSesion.html"><button type="button" class="btn btn-outline-primary me-2">Login</button></a>
-     <a href="/registro.html"><button type="button" class="btn btn-primary">Sign-up</button></a>
+     <a href="/inicioSesion.html"><button type="button" class="btn btn-outline-primary me-2">Iniciar</button></a>
+     <a href="/registro.html"><button type="button" class="btn btn-primary">Registar</button></a>
    </div>
  </div>
 </div> 
@@ -33,7 +33,7 @@ footer.innerHTML=`<footer class="piePagina">
         <li class="logo fa-solid fa-circle"></li>
         <li class="foot_li"><a id="ColorContacto" class="textfoot" href="/contacto.html">Contacto</a></li>
         <li class="foot_li"><a id="ColorAviso" class="textfoot" href="/aviso.html">Aviso de privacidad</a></li>
-        <li class="foot_li"><a id="ColorTerminos" class="textfoot" href="/terminos.html">Terminos y condiciones</a></li>
+        <li class="foot_li"><a id="ColorTerminos" class="textfoot" href="/terminos.html">Términos y condiciones</a></li>
         <li class="face fa-brands fa-facebook"></li>
         <li class="twitter fa-brands fa-twitter"></li>
     </ul>
@@ -41,7 +41,7 @@ footer.innerHTML=`<footer class="piePagina">
             <li class="logo_responsive fa-solid fa-circle"></li>
             <li class="foot_responsive"><a class="textResponsive" href="/contacto.html">Contacto</a></li>
             <li class="foot_responsive"><a class="textResponsive" href="/aviso.html">Aviso de privacidad</a></li>
-            <li class="foot_responsive"><a class="textResponsive" href="/terminos.html">Terminos y condiciones</a></li>
+            <li class="foot_responsive"><a class="textResponsive" href="/terminos.html">Términos y condiciones</a></li>
             <li class="face_responsive fa-brands fa-facebook"></li>
             <li class="twitter_responsive fa-brands fa-twitter"></li>
         </div>
