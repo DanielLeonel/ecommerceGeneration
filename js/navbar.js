@@ -4,7 +4,7 @@ let navBar = document.getElementById("BarraNavegacion");
 function BarraNavegacion(){
 navBar.innerHTML=`<nav class="navbar navbar-expand-lg border-bottom" id="menu">
 <div class="container-fluid">
- <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+ <img src="./img/logo 3.svg" alt="" width="30" height="24">
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
@@ -18,7 +18,7 @@ navBar.innerHTML=`<nav class="navbar navbar-expand-lg border-bottom" id="menu">
    <div class="col-md-3 mr-auto text-center text-end">
      <a href="/carrito.html"><button type="button" class="btn btn-outline-primary me-2"><i class="fa-solid fa-cart-shopping"></i></button></a>
      <a href="/inicioSesion.html"><button type="button" class="btn btn-outline-primary me-2">Iniciar</button></a>
-     <a href="/registro.html"><button type="button" class="btn btn-primary">Registar</button></a>
+     <a href="/registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
    </div>
  </div>
 </div> 
