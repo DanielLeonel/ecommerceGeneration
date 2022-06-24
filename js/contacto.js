@@ -3,7 +3,6 @@ let lastname = document.getElementById("Apellido");
 let phone = document.getElementById("Telefono");
 let correo = document.getElementById("Correo"); 
 let coment = document.getElementById("Comentario");
-let termino = document.getElementById("termino");
 
 function validarNombre(){
   if (nombre.value.length <3) 
@@ -61,14 +60,6 @@ function validarNombre(){
    if(/[0-9]/.test(lastname.value)){
     return false;
    }
-    return true;
-  }
-
-  
-  function validarTermino(){
-    if(termino.value.length==0){
-      return false;
-    }
     return true;
   }
   let agregar = document.getElementById("enviar");
