@@ -1,7 +1,7 @@
 *{
     
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
 html {
     min-height: 100%;
@@ -16,6 +16,11 @@ html {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    background-image: url('../img/hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .contenedor{
     margin: 20px;
@@ -83,6 +88,9 @@ margin-top: 20px;
     transition: all 500ms ease-out;
     margin: auto;
 }
+
+/* Sección de pie de página */
+
 .piePagina{
     position: absolute;
     bottom: 0;
@@ -186,4 +194,190 @@ nav{
     .foot_ul_responsive{
         display: block;
     }
+}
+
+/* Media para el contenedor */
+@media only screen and (max-width: 1070px){
+    .face{
+        left: 85%;
+    }
+    .twitter{
+        left: 81%;
+    }
+}
+
+
+
+/* Sección móvil */
+
+@media only screen and (max-width: 600px){
+    .contenedor{
+        display: none;
+    }
+    .section1{
+        display: display;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .contenedor{
+        display: display;
+    }
+    .section2{
+        display: none;
+    }
+}
+
+
+
+body{
+    width: 100%;
+    font-family: 'lato';
+}
+
+.parallax-completo{
+    width: 100%;
+    height:100vh;
+    background-image: url('../img/hero.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-completo1{
+    width: 100%;
+    height:100vh;
+    /* background-image: url('hero.jpg'); */
+    /* background-position: center;
+    background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-hero{
+    background: rgba(214, 214, 214, 0.359);
+    padding: 18px;
+    width: 320px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-size:32px;
+    font-weight: 300;
+}
+
+.center{
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.espacio{
+    padding: 30px 0 60px 0;
+}
+
+.espacio h2{
+    text-align: center;
+    padding: 30px;
+}
+
+.espacio p{
+    text-align: justify;
+}
+
+.parallax-Daniel{
+    height: 500px;
+    background-image: url(../img/Dan.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parallax-Adrian{
+    height: 500px;
+    background-image: url(../img/Adrian.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-Anel{
+    height: 500px;
+    background-image: url(../img/Anel.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-Brenda{
+    height: 500px;
+    background-image: url(../img/Brenda.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-Mauricio{
+    height: 500px;
+    background-image: url(../img/Mauricio.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-Guadalupe{
+    height: 500px;
+    background-image: url(../img/Guadalupe.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax-Arturo{
+    height: 500px;
+    background-image: url(../img/Arturo.webp);
+    background-attachment: fixed;
+    background-size:auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.parallax-chico h2{
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+.texto{
+    background: #ccc;
+    height:190px;
+}
+
+.texto h2{
+    text-align: center;
+    color: #000;
+    display: flex;
+    height:inherit;
+    justify-content: center;
+    align-items: center;
 }
