@@ -3,8 +3,7 @@ let lastname = document.getElementById("Apellido");
 let phone = document.getElementById("Telefono");
 let correo = document.getElementById("Correo"); 
 let coment = document.getElementById("Comentario");
-<<<<<<< HEAD
-let termino = document.getElementById("termino");
+
 
 function validarNombre(){
   if (nombre.value.length <3) 
@@ -13,7 +12,6 @@ function validarNombre(){
   }//if
   return true;
   }
-=======
 
 function validarNombre(){
   if (nombre.value.length <3) 
@@ -29,8 +27,6 @@ function validarNombre(){
  return true;
 }
 // 
-
->>>>>>> mauricio
   function validarTelefono(){
       if(phone.value.length==0) {
           return false;
@@ -51,17 +47,11 @@ function validarNombre(){
   {
       if(/^[a-zA-Z_0-9._%+-]+@(?:[a-zA-Z_0-9.-]+\.)[a-zA-Z]{2,6}/.test(correo.value))
       {
-<<<<<<< HEAD
           return true;
       }
-      else return false; 
-    }
-=======
-        return true; 
-    }
-    return false;
+       return false; 
   }
->>>>>>> mauricio
+
   function validarComentario(){
           if (coment.value.length==0 ){
             return false;
@@ -76,20 +66,11 @@ function validarNombre(){
     if (!isNaN(lastname.value)){
       return false;
    }
-<<<<<<< HEAD
-    return true;
-    
-  }
-  function validarTermino(){
-    if(termino.value.length==0){
-      return false;
-    }
-=======
    if(/[0-9]/.test(lastname.value)){
     return false;
    }
->>>>>>> mauricio
     return true;
+    
   }
   let agregar = document.getElementById("enviar");
   agregar.addEventListener("click", (event)=>{
