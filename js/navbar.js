@@ -4,7 +4,7 @@ let navBar = document.getElementById("BarraNavegacion");
 function BarraNavegacion(){
 navBar.innerHTML=`<nav class="navbar navbar-expand-lg border-bottom" id="menu">
 <div class="container-fluid">
- <img src="./img/logo 3.svg" alt="" width="30" height="24">
+ <img src="./img/logo 3.svg" alt width="50" height="auto">
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
  </button>
