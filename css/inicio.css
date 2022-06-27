@@ -117,3 +117,11 @@ nav{
         display: block;
     }
 }
+#text{
+    margin-left: 100px;
+    font-size: 40px;
+      
+    }
+    #button{
+      margin-left: 250px;
+    }

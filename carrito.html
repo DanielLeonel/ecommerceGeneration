@@ -27,9 +27,9 @@
         <tr>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th scope="col"></th>
-          <th scope="col">Productos</th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+          <th scope="col" id="product">Productos</th>
+          
+          
           <th scope="col">Precio</th>
           <th scope="col">Cantidad</th>
           <th scope="col">Total</th>
@@ -37,44 +37,37 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th scope="row">1</th>
-          <td><p>Plantilla para restaurante</p><img src="img/quantized.png" width="150px" hieght="150px"></td>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <td>$ 1000</td>
-          <td> <input type="number" required
-            min="1"
-            max="10"
-            ></td>
-          <td>$ 1000</td>
+          <th width="500px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+          <th scope="row" id="numeracion">1</th>
+          <!-- <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p> -->
+            <td id="product1"><p>Plantilla para restaurante</p>
+           <img src="img/quantized.png" width="150px" hieght="150px"></td>
+          </th>
+          
+          <td id="precio">$1000</td>
+          <td id="cant"> <input type="number" required="" min="1" max="10"></td>
+          <td>$1000</td>
         </tr>
         <tr>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th scope="row">2</th>
           <td><p>Plantilla para restaurante</p><img src="img/quantized.png" width="150px" hieght="150px"></td>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           
-          <td>$ 1000</td>
-          <td>  <input type="number" required
-            min="1"
-            max="10"
-            ></td>
-          <td>$ 1000</td>
+          
+          
+          <td>$1000</td>
+          <td>  <input type="number" required="" min="1" max="10"></td>
+          <td>$1000</td>
         </tr>
         <tr>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th scope="row">3</th>
           <td><p>Plantilla para restaurante</p><img src="img/quantized.png" width="150px" hieght="150px"></td>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+          
+          
           <td>$1000</td>
-          <td> <input type="number" required
-            min="1"
-            max="10"
-            ></td>
-          <td>$ 1000</td>
+          <td> <input type="number" required="" min="1" max="10"></td>
+          <td>$1000</td>
         </tr>
       </tbody>
     </table>
@@ -93,47 +86,50 @@
   <thead>
     <tr>
       <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="300px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
-      <th scope="col">Productos</th>
-      <th width="50px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-      <th width="50px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>    
-      <th scope="col">$998</th>
-
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
       <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
           <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-      <th scope="row">IVA</th>
-      <th width="60px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-      <th width="50px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>   
-      <td>$20</td>
+          <th width="200px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+      <th scope="col">Productos</th>
+      <th width="350px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+      <td scope="col">3</td>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+          
+      <tr>
+        <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+        <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+        <th scope="col">Iva</th>
+        <th width="20px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+        <td scope="col">$20</td>
     </tr>
   </thead>
   <tbody class="table-group-divider" id="total">
     <tr>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-          <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-      <th scope="row">TOTAL</th>
-      <th width="60px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
-      <th width="50px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>   
-      <td>$118</td>
+      <tr>
+        <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+        <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:100px" value="Nombre"></p></th>
+            <th width="200px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+        <th scope="col">Total</th>
+        <th width="20px"><p type="text" style="display: inline; width:200px" value="Nombre"></p></th> 
+        <td scope="col">$998</td>
     </tr>
   </tbody>
 </table>
@@ -142,6 +138,8 @@
   <button type="button" class="btn btn-secondary btn-lg" id="btn">Proceder al pago</button>
 </div>
 </div>
+<br>
+<br>
 <div id="PieDePagina"><!--Pie de página en JS-->
 </div>  
     <script src="https://kit.fontawesome.com/a2fde8c980.js" crossorigin="anonymous"></script>
