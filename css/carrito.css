@@ -131,9 +131,68 @@ nav{
 }
 #btn{
     height:50px; 
-    width:290px; 
+    width:200px; 
     margin: -20px -50px; 
     position:relative;
     top:50%; 
-    left:80%;
+    left:65%;
 }
+@media only screen and (max-width: 500px){
+    #btn {
+       font-size: 10px;
+       position:relative;
+       top:50%; 
+       left:60%;
+       right:12% ;
+       max-width:20% ;
+     }
+   }
+   @media only screen and (max-width: 1px){
+    #table {
+       font-size: 10px;
+       position:relative;
+       top:50%; 
+       left:10%;
+       right:5% ;
+       max-width:20% ;
+     }
+   }
+   @media only screen and (max-width: 1px){
+    #total {
+       font-size: 10px;
+       position:relative;
+       top:50%; 
+       left:10%;
+       right:5% ;
+       max-width:20% ;
+     }
+   }
+#product1{
+ width: 300px;
+}
+#cant{
+    width: 300px;
+   }
+   #precio{
+    width: 300px;
+   }
+   #numeracion{
+    width: 20px;
+   }
+   #iva{
+    width: 0.5px;
+   }
+   #costo{
+    width: 20px;
+   }
+   #producto{
+    font-size: 14px;
+    position:relative;
+    top:50%; 
+    left:33%;
+    max-width:40% ;
+
+  }
+  #product{
+    width: 20px;
+   }
