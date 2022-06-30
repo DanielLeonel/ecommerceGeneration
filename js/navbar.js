@@ -84,8 +84,8 @@ function piePagina() {
         <li class="foot_li"><a id="ColorContacto" class="textfoot" href="/contacto.html">Contacto</a></li>
         <li class="foot_li"><a id="ColorAviso" class="textfoot" href="/aviso.html">Aviso de privacidad</a></li>
         <li class="foot_li"><a id="ColorTerminos" class="textfoot" href="/terminos.html">Términos y condiciones</a></li>
-        <li class="face fa-brands fa-facebook"></li>
-        <li class="twitter fa-brands fa-twitter"></li>
+        <a href="https://www.facebook.com/Alpha-Designers-101859812590935"><li class="face fa-brands fa-facebook"></li>
+        <a href="https://twitter.com/AlphaDesigners2"><li class="twitter fa-brands fa-twitter"></li></a>
     </ul>
     <ul class="foot_ul_responsive">
             <li class="logo_responsive fa-solid fa-circle"></li>
