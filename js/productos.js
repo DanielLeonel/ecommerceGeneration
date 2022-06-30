@@ -40,7 +40,7 @@ addItem({
 addItem({
     'name'       :'Tecnología',
     'img'        :'./img/Producto4.svg',
-    'description':'Diseño fresco, ideal para productos tecnológicos, intuitivo y llamativo. Buscando llegar a un cliente joven.',
+    'description':'Diseño fresco, ideal para productos tecnológicos, intuitivo y llamativo. Para un cliente joven.',
     'precio'     :'599.00'});
 addItem({
     'name'       :'Moda',
