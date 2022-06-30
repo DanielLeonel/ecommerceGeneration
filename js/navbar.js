@@ -1,33 +1,82 @@
 let navBar = document.getElementById("BarraNavegacion");
 
-
-function BarraNavegacion(){
-navBar.innerHTML=`<nav class="navbar navbar-expand-lg border-bottom" id="menu">
-<div class="container-fluid">
- <img src="./img/logo 3.svg" alt width="50" height="auto">
- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
- <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-     <li><a href="/inicio.html" id="ColorInicio" class="nav-link px-2">Inicio</a></li>
-     <li><a href="/productos.html" id="ColorProductos" class="nav-link px-2">Productos y Servicios</a></li>
-     <li><a href="/nosotros.html" id="ColorNosotros" class="nav-link px-2">Nosotros</a></li>
-     <li><a href="/contacto.html" id="ColorContacto" class="nav-link px-2">Contacto</a></li>
-   </ul>
-   <div class="col-md-3 mr-auto text-center text-end">
-     <a href="/carrito.html"><button type="button" class="btn btn-outline-primary me-2"><i class="fa-solid fa-cart-shopping"></i></button></a>
-     <a href="/inicioSesion.html"><button type="button" class="btn btn-outline-primary me-2">Iniciar</button></a>
-     <a href="/registro.html"><button type="button" class="btn btn-primary">Registro</button></a>
-   </div>
- </div>
-</div> 
+function BarraNavegacion() {
+  navBar.innerHTML = `<nav
+  id="navbar-example3"
+  class="navbar navbar-expand-lg navbar-light bg-light fs-5 fw-semibold fixed-top"
+>
+  <div class="container">
+    <a href="/" class="navbar-brand">
+      <img
+        src="./img/logo-brand.svg"
+        height="55"
+        alt="MDB Logo"
+        loading="lazy"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="collapse navbar-collapse text-center"
+      id="navbarSupportedContent"
+    >
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" aria-current="page">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="productos.html" class="nav-link" aria-current="page"
+            >Productos y Servicios</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="nosotros.html" class="nav-link" aria-current="page"
+            >Nosotros</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="contacto.html" class="nav-link" aria-current="page"
+            >Contacto</a
+          >
+        </li>
+      </ul>
+      <div class="dropdown">
+        <img
+          class="dropdown-toggle align-items-center rounded-circle mt-1 mx-4"
+          href="#"
+          type="button"
+          id="dropdownMenuButton"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          src="./img/avatar.png"
+          alt="avatar"
+          height="40"
+          loading="lazy"
+        />
+        <ul class="dropdown-menu item" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
+          <li><a class="dropdown-item" href="index.html">Salir</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>`;
 }
 BarraNavegacion();
+
 let footer = document.getElementById("PieDePagina");
-function piePagina(){
-footer.innerHTML=`<footer class="piePagina">
+function piePagina() {
+  footer.innerHTML = `<footer class="piePagina">
 <nav class="container">
     <ul class="foot_ul">
         <li class="logo fa-solid fa-circle"></li>
@@ -50,4 +99,3 @@ footer.innerHTML=`<footer class="piePagina">
 </footer>`;
 }
 piePagina();
-
