@@ -82,7 +82,7 @@ nav{
     color: black;
     }
 #ColorContacto{
-    color: blue;
+    color: black;
     }
     #ColorInicio:hover{
         color: blue;
@@ -135,4 +135,9 @@ nav{
 #alertValidaciones{
     height:360px; 
     width:250px;
+}
+
+.alto{
+    height: 650px;
+    margin: auto;
 }

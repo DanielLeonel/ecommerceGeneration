@@ -12,95 +12,53 @@
   <div id="BarraNavegacion"><!--Barra de navejación en JS-->
   </div>
   <main>
-    <div class="container-fluid d-flex justify-content-center mt-5">
-      <div class="row alto align-items-center">
-        <div class="d-none d-sm-block col-md-12">
-          <img id="imgRegistro" class="img-fluid" src="./img/registro.svg" alt="registro" width="1000px" height="auto">
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="row alto align-items-center">
+            <div class="d-none d-sm-block col-md-12">
+                <img class="img-fluid" src="./img/Abstraction.svg" alt="Imagen Registro"
+                width="1000px" height="auto">
+            </div>                
         </div>
-      </div>
-      <div class="row alto align-items-center justify-content-center gx-5">
-        <div class="col-12">
-          <div class="alert alert-danger fade show" style="display:none" id="alertValidaciones">
-            <p id="alertValidacionesTexto"></p>
-          </div>
-          <form action="" method="">
-            <div class="col-12">
-            <div class="col-12 col-md-12" >
-              <label class="form-label">Nombre</label>
-              <input name="name" type="text" class="form-control" placeholder="Nombre" id="Name">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-             <div class="col-12 col-md-12">
-              <label class="form-label" >Apellido Paterno</label>
-              <input name="name" type="text" class="form-control" placeholder="Apellido paterno" id="apellido">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-          
-            <div class="col-12 col-md-12">
-              <label class="form-label">Apellido Materno</label>
-              <input name="name" type="text" class="form-control" placeholder="Apellido materno" id="amaterno">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label  class="form-label">Correo</label>
-              <input type="email" class="form-control" placeholder="Correo electrónico" id="Correo" >
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-              <br>
-              <div class="col-md-12">
-              <label class="form-label">Confirmar correo electrónico</label>
-              <input name="email" type="email" class="form-control" placeholder="Confirma tu correo electrónico" id="email">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label class="form-label">Contraseña</label>
-              <input name="last-num" type="password" class="form-control" placeholder="contraseña"  id="number">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-            <div class="col-md-12">
-              <label  class="form-label">Confirmar contraseña</label>
-              <input name="phone" type="password" class="form-control"  placeholder="Confirma tu contraseña"  id="password">
-              <div class="valid-feedback">
-                Correcto
-              </div>
-            </div>
-            
+        <div class="row"> 
+            <div class="row alto align-items-center justify-content-center">
+                <div class="col-12">
+                    <form id="formulario" class="row g-3 needs-validation contact-form" novalidate>
+                        <h1>Registro</h1>
+                        <div class="col-12 col-md-12">
+                            <label id="fullName" for="fullName" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="fullName" name="fullName" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label id="phone" for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label id="email" for="email"
+                                class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" name="email" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="col-12 col-md-12">
+                            <label id="password" for="password"
+                                class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password" required />
+                            <div class="valid-feedback">Se ve bien</div>
+                        </div>
+                        <div class="d-grid gap-2 mt-5">
+                            <button id="btnSend" class="btn btn-primary" type="submit">
+                                Regístrate
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>`              
 
-            <div class="mb-3">
-              
-              <br>
-
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
-                  <label class="form-check-label" for="invalidCheck">
-                    Aceptar <a href="/terminos.html">términos y condiciones.</a>
-                  </label>
-                  </div>
-              <br>
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit" id="enviar">Enviar</button>
-              </div>
-              <br>
-              <div class="row">
-                <p>¿Ya tienes una cuenta? <a href="./inicioSesion.html">Inicia sesión</a></p> 
-              </div>
-          </form>
         </div>
+    </div>
+</main>
 
-  </main>
   <div id="PieDePagina"><!--Pie de página en JS-->
 </div> 
 <script src="/js/Registro.js"></script>
