@@ -35,4 +35,11 @@ function saveProduct(){
         sDesc = document.querySelector("#validationCustom03").value;
 addUser(sName, sUrl, sDesc);
 
+Swal.fire(
+    '¡Carga Exitosa!',
+    '',
+    'success'
+  )
+
 };
+
