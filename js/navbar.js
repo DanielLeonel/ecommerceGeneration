@@ -65,7 +65,8 @@ function BarraNavegacion() {
         />
         <ul class="dropdown-menu item" aria-labelledby="dropdownMenuButton">
           <li><a class="dropdown-item" href="carrito.html">Carrito</a></li>
-          <li><a class="dropdown-item" href="index.html">Salir</a></li>
+          <li><a class="dropdown-item" href="inicio-sesion.html">Iniciar</a></li>
+          <li><a class="dropdown-item" href="registro.html">Regístrate</a></li>
         </ul>
       </div>
     </div>
