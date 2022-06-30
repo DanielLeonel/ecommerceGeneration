@@ -22,53 +22,53 @@ function addItem(item){
       itemsContainer.innerHTML += itemHTML;
   }
 
+  addItem({
+    'name'       :'Básico',
+    'img'        :'./img/Producto1.svg',
+    'description':'Diseño simple, que hará que tu marca resalte por si misma.',
+    'precio'     :'799.00'});
 addItem({
-    'name'       :'Option 1',
-    'img'        :'https://picsum.photos/400/400.webp?random=1',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Naturaleza',
+    'img'        :'./img/Producto2.svg',
+    'description':'Diseño ideal para productos de belleza, cuidado y orgánicos.',
+    'precio'     :'899.00'});
 addItem({
-    'name'       :'Option 2',
-    'img'        :'https://picsum.photos/400/400.webp?random=2',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'General',
+    'img'        :'./img/Producto3.svg',
+    'description':'Cuaquier producto queda bien en este diseño, es todo lo que necesitas.',
+    'precio'     :'899.00'});
 addItem({
-    'name'       :'Option 3',
-    'img'        :'https://picsum.photos/400/400.webp?random=3',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Tecnología',
+    'img'        :'./img/Producto4.svg',
+    'description':'Diseño fresco, ideal para productos tecnológicos, intuitivo y llamativo. Buscando llegar a un cliente joven.',
+    'precio'     :'599.00'});
 addItem({
-    'name'       :'Option 4',
-    'img'        :'https://picsum.photos/400/400.webp?random=4',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Moda',
+    'img'        :'./img/Producto5.svg',
+    'description':'Con catálogo integrado y filtros diseñados para que tus productos se muestren de la mejor manera.',
+    'precio'     :'799.00'});
 addItem({
-    'name'       :'Option 5',
-    'img'        :'https://picsum.photos/400/400.webp?random=5',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Restaurante',
+    'img'        :'./img/Producto6.svg',
+    'description':'Tu menú, pedidos y reservaciones en un mismo lugar, con un diseño totalmente adaptable a tu marca.',
+    'precio'     :'999.00'});
 addItem({
-    'name'       :'Option 6',
-    'img'        :'https://picsum.photos/400/400.webp?random=6',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Innovador',
+    'img'        :'./img/Producto7.svg',
+    'description':'Diseño ideal para marcas que son diferentes y que buscan resaltar del resto. Una imagen que seguro tus clientes recordarán',
+    'precio'     :'699.00'});
 addItem({
-    'name'       :'Option 7',
-    'img'        :'https://picsum.photos/400/400.webp?random=7',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Introducción y actualización continua',
+    'img'        :'./img/productos/herramientas-de-marketing-digital (2).jpg',
+    'description':'Resolvemos todas tus dudas y te llevamos de la mano en la actualización del diseño para que se adapte a tu marca.',
+    'precio'     :'1299.00'});
 addItem({
-    'name'       :'Option 8',
-    'img'        :'https://picsum.photos/400/400.webp?random=8',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Administración',
+    'img'        :'./img/productos/Los-100-datos-sobre-inbound-marketing-que-necesitas-saber (1).jpg',
+    'description':'Gestiona tu e-commerce desde un solo lugar, optimiza y administra tu negocio de forma eficiente. Con control total de pago y envíos.',
+    'precio'     :'999.00'});
 addItem({
-    'name'       :'Option 9',
-    'img'        :'https://picsum.photos/400/400.webp?random=9',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
-addItem({
-    'name'       :'Option 10',
-    'img'        :'https://picsum.photos/400/400.webp?random=10',
-    'description':'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, minus?',
-    'precio'     :'100.00'});
+    'name'       :'Crecimiento de tu tienda online',
+    'img'        :'./img/productos/1.3.jpg',
+    'description':'Mejoramos tu estrategia de marketing para mayores ventas y tu visibilidad online',
+    'precio'     :'959.00'});
