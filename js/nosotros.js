@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Apha Designers...', 'Líderes en desarrollo Web.', 'Si lo puedes imaginar, lo puedes programar.' ], 'text',['rgb(8, 41, 174)','rgb(55, 8, 174)','rgb(143, 11, 125)']);
+consoleText(['Alpha Designers...', 'Líderes en desarrollo Web.', 'Si lo puedes imaginar, lo puedes programar.' ], 'text',['rgb(8, 41, 174)','rgb(55, 8, 174)','rgb(143, 11, 125)']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
