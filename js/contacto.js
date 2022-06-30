@@ -127,4 +127,9 @@ agregar.addEventListener("click", (event) => {
   correo.style.border = "";
   coment.style.border = "";
   document.getElementById("alertValidaciones").style.display = "none";
+  Swal.fire(
+    '¡Su mensaje fue enviado con éxito.!',
+    '',
+    'success'
+  )
 });
