@@ -1,27 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"  href="/css/inicioSesion.css">
-    <title>Plantilla</title>
-</head>
-<body>
-  <div id="BarraNavegacion"><!--Barra de navejación en JS-->
-  </div>
-  
-  <div id="PieDePagina"><!--Pie de página en JS-->
-</div> 
-<script src="https://kit.fontawesome.com/a2fde8c980.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
-<script src="./js/navbar.js"></script>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/inicioSesion.css" />
+    <title>Inicio Sesión</title>
+  </head>
 
+  <body>
+    <div id="BarraNavegacion" class="alto">
+      <!--Barra de navejación en JS-->
+    </div>
+
+    <!-- Inicio sesión -->
+    <main>
+      <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="">
+          <div class="d-none d-sm-block col-md-12">
+            <img
+              class="img-fluid"
+              src="./img/login.svg"
+              alt="Imagen Contacto"
+              width="1000"
+            />
+          </div>
+        </div>
+        <div class="container mt-5 justify-content-center">
+          <div class="col-12">
+            <h1>Inicio de sesión</h1>
+            <section class="alert alert-danger text-center lead d-none">
+              Uppps, no aceptamos campos ni espacios vacios 👀
+            </section>
+            <form
+              id="form"
+              class="row g-3 contact-form"
+              novalidate
+            >
+              <div class="col-12 col-md-12">
+                <label id="email" for="email" class="form-label"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Escribe tu correo electrónico"
+                  class="form-control mb-2"
+                />
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="password" class="form-label"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Escribe tu contraseña"
+                  class="form-control"
+                />
+              </div>
+              <div class="d-grid gap-2">
+                <button 
+                  class="btn btn-primary"
+                  type="submit"
+                  >
+                  Ingresar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Inicio Sesión End -->
+
+    <div id="PieDePagina">
+      <!--Pie de página en JS-->
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      src="https://kit.fontawesome.com/a2fde8c980.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
 </html>
-        
-        
-    
