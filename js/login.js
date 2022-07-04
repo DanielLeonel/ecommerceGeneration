@@ -60,7 +60,7 @@ form.addEventListener('submit', (e) =>{
         Swal.fire(
             '¡Error en el usuario o contraseña.!',
             '',
-            'success'
+            'error'
           );
 
     }
