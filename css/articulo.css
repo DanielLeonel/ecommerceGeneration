@@ -1,80 +1,3 @@
-body
-{
-	background:#fffcfc;
-	/* background-image:url("/img/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.webp"); */
-	font-size:18;
-    
-
-}
-#body1
-{
-	background:#fffefe;
-	/* background-image:url("/img/about\ us.webp"); */
-	font-size:18;
-    
-
-}
-#agrupar
-{
-	width:960px;
-	margin:15px auto;
-	text-aling:left;
-}
-#cabezera
-{
-	background:#a3d2f1;
-	border:9px solid #ffffff;
-	padding:10px;
-	text-color:rgb(0, 0, 0);
-}
-#cabezera h1
-{
-	text-align:center;
-}
-#cabezera img
-{
-	float:left;
-	margin:-15px auto;
-}
-#menu
-{
-	background:#ffffff;;
-	text-color:white;
-}
-#menu li
-{
-	display:inline-block;
-	list-style:none;
-	padding:5px;
-	font:<font face="Comic Sans MS,arial,verdana">
-	font-size:3;
-	
-}
-
-#card{
-	border:5px solid #131313;
-	padding:15px;
-	margin: 20px;
-}
-#card1{
-	border:5px solid #131313;
-	padding:15px;
-	margin: 20px
-}
-#card2{
-	border:5px solid #131313;
-	padding:15px;
-	margin: 20px;
-
-}
-#carouselExampleIndicators{
-	padding:5px;
-	margin:15px auto;
-}
-
-
-/* CSS de la página del artículo */
-
 section {
 	padding: 60px 0;
   }
@@ -98,7 +21,10 @@ section {
   }
   
   /* // Small devices (landscape phones, 576px and up) */
-  @media (min-width: 300px) {
+  @media (max-width: 600px) {
+	.banner-content{
+		padding: 50px;
+	}
 	.banner-content > h1 {
 	  font-size: 25px;
 	  line-height: 25px;
@@ -106,10 +32,19 @@ section {
 	.banner-content > p {
 	  font-size: 15px;
 	}
+	.primera-imagen img{
+		width: 100%;
+	}
+	.segunda-imagen img{
+		width: 100%;
+	}
+	.tercera-imagen img{
+		width: 100%;
+	}
   }
   
   /* // Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
 	.banner-content > h1 {
 	  font-size: 40px;
 	  line-height: 40px;
@@ -117,10 +52,19 @@ section {
 	.banner-content > p {
 	  font-size: 15px;
 	}
+	.primera-imagen img{
+		width: 100%;
+	}
+	.segunda-imagen img{
+		width: 100%;
+	}
+	.tercera-imagen img{
+		width: 100%;
+	}
   }
   
   /* // Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
+  @media (min-width: 700px) {
 	.banner-content h1 {
 	  font-size: 50px;
 	  font-weight: normal;
@@ -130,6 +74,15 @@ section {
 	  font-size: 20px;
 	  font-weight: normal;
 	  margin-bottom: 2rem;
+	}
+	.primera-imagen img{
+		width: 100%;
+	}
+	.segunda-imagen img{
+		width: 100%;
+	}
+	.tercera-imagen img{
+		width: 100%;
 	}
   }
   
