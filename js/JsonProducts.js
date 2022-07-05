@@ -9,24 +9,13 @@ function addUser(pName, pUrl, pDesc ) {
     };
     console.log(newProduct);
     productList.push(newProduct);
-    localStorageProducts(productList);
+
+    //Guadar en localSorage
+    localStorage.setItem('Productos', JSON.stringify(productList));
+
+
+    
 };
-
-function getProductList(){
-    let storedList = localStorage.getItem("localProducts");
-    if(storedList == null){
-        productList =[];
-    }else{
-        productList = JSON.parse(storedList);
-    }
-    return productList;
-};
-
-function localStorageProducts(plist){
-localStorage.setItem("localProducts", JSON.stringify(plist));
-
-};
-
 document.querySelector("#btnEnviar").addEventListener("click", saveProduct);
 
 function saveProduct(){
@@ -42,4 +31,12 @@ Swal.fire(
   )
 
 };
+
+//Obtener datos de localStorage
+document.addEventListener('DOMContentLoaded', (e) => {
+    if (localStorage.getItem("Productos")) {
+        productList = JSON.parse(localStorage.getItem('Productos'));
+        console.log("Productos desde localStorage", productList)
+    }
+});
 
