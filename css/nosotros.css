@@ -1,8 +1,4 @@
-*{
-    
-    margin: 0;
-    padding: 0;
-}
+
 html {
     min-height: 100%;
     position: relative;
@@ -88,15 +84,7 @@ margin-top: 20px;
     transition: all 500ms ease-out;
     margin: auto;
 }
-.mensaje{
-    width: 100%;
-    margin: 130px;
-    padding: 50px;
-    background-color: rgba(204, 204, 204, 0.364);
-    border-radius: 15px;
-    /* border: 3px solid rgb(102, 98, 98); */
-    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
-}
+
 
 /* Sección de pie de página */
 
@@ -226,6 +214,9 @@ nav{
     .section1{
         display: display;
     }
+    .sectionSuperior{
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 600px){
@@ -241,12 +232,13 @@ nav{
 
 body{
     width: 100%;
+    height: 100%;
 }
 
 .parallax-completo{
     width: 100%;
     height:100vh;
-    background-image: url('../img/hero.png');
+    background-image: url('../img/nosotros/bg-responsive.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -259,9 +251,6 @@ body{
 .parallax-completo1{
     width: 100%;
     height:100vh;
-    /* background-image: url('hero.jpg'); */
-    /* background-position: center;
-    background-size: cover; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
@@ -270,7 +259,7 @@ body{
 }
 
 .texto-hero{
-    background: rgba(214, 214, 214, 0.359);
+    background: rgba(17, 17, 17, 0.354);
     padding: 18px;
     width: 320px;
     text-align: center;
@@ -305,7 +294,7 @@ h2{
 
 .parallax-Daniel{
     height: 500px;
-    background-image: url(../img/Dan.webp);
+    background-image: url(../img/nosotros/Dan.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -313,7 +302,7 @@ h2{
 }
 .parallax-Adrian{
     height: 500px;
-    background-image: url(../img/integrantes/me.png);
+    background-image: url(../img/nosotros/Adrian.png);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -322,7 +311,7 @@ h2{
 
 .parallax-Anel{
     height: 500px;
-    background-image: url(../img/Anel.webp);
+    background-image: url(../img/nosotros/Anel.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -331,7 +320,7 @@ h2{
 
 .parallax-Brenda{
     height: 500px;
-    background-image: url(../img/Brenda.webp);
+    background-image: url(../img/nosotros/Brenda.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -340,7 +329,7 @@ h2{
 
 .parallax-Mauricio{
     height: 500px;
-    background-image: url(../img/Mauricio.webp);
+    background-image: url(../img/nosotros/Mauricio.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -349,7 +338,7 @@ h2{
 
 .parallax-Guadalupe{
     height: 500px;
-    background-image: url(../img/Guadalupe.webp);
+    background-image: url(../img/nosotros/Guadalupe.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
@@ -358,14 +347,12 @@ h2{
 
 .parallax-Arturo{
     height: 500px;
-    background-image: url(../img/Arturo.webp);
+    background-image: url(../img/nosotros/Arturo.webp);
     background-attachment: fixed;
     background-size:auto;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
 
 .parallax-chico h2{
     display: flex;
@@ -390,6 +377,7 @@ h2{
     align-items: center;
 }
 
+
 /* efecto titulo */
 
 
@@ -400,8 +388,8 @@ h2{
 }
 .console-container {
  
-  font-family:Khula;
-  font-size:4em;
+  
+  font-size:2em;
   text-align:center;
   height:200px;
   width:600px;
@@ -420,3 +408,128 @@ h2{
   top:-0.14em;
   left:10px;
 }
+
+
+/* Modificación de la parte superior */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container_all{
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+
+/*COVER*/
+
+.cover{
+    width: 100%;
+    padding-bottom: 120px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.container__cover{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    background-image: url(../img/nosotros/background-cover.svg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+.cover .container__info{
+    max-width: 400px;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.cover h1{
+    max-width: 400px;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.321);
+}
+
+.cover h2{
+    font-size: 50px;
+    font-weight: 900;
+    color: #000000;
+    margin-top: -30px;
+}
+
+.cover p{
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.cover input[type="button"]{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background: #FEBA0B;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+.cover input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+.container__vector{
+    position: relative;
+}
+
+.container__vector img{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    width: 600px;
+    transition: all 300ms;
+    animation: move_vector 6s ease-in-out infinite;
+}
+
+@keyframes move_vector{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+@media screen and (max-width: 920px){
+
+    .container__vector img{
+        width: 500px;
+    }
+}
+
+
+
+

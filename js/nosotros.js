@@ -47,5 +47,6 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 300)
+  }, 100)
 }
+
