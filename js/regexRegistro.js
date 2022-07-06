@@ -99,8 +99,52 @@ formulario.addEventListener('submit', e =>{
     console.log("Formulario enviado")
 
     // Code
-    
+    saveProduct();
     // Code
-    mandarAlertaSuccess();
+    Swal.fire(
+        '¡Usuario registrado!',
+        '',
+        'success'
+      )
 });
+
+let registerList = [];
+
+function addUser(pName, pTel, pCorreo, pContrasena ) {
+    let newUser ={
+        name : pName,
+        tel : pTel,
+        correo : pCorreo,
+        contrasena : pContrasena
+
+    };
+    console.log(newUser);
+    registerList.push(newUser);
+
+    //Guadar en localSorage
+    localStorage.setItem('usuarios', JSON.stringify(registerList));
+
+
+    
+};
+
+function saveProduct(){
+    let sName = document.querySelector("#fullName").value,
+        sTel = document.querySelector("#phone").value,
+        sCorreo = document.querySelector("#email").value;
+        sContrasena = document.querySelector("#password").value;
+addUser(sName, sTel, sCorreo, sContrasena);
+
+
+
+};
+
+//Obtener datos de localStorage
+document.addEventListener('DOMContentLoaded', (e) => {
+    if (localStorage.getItem("usuarios")) {
+        registerList = JSON.parse(localStorage.getItem('usuarios'));
+        console.log("usuarios desde localStorage", registerList)
+    }
+});
+
 
