@@ -28,7 +28,7 @@ We are Alpha Designers -- Ecommerce
 
 <h3>🛠 Learning is the way to success</h3>
 
-![Image](https://i.ibb.co/swXBH3X/033a63db-a4aa-438f-9e74-068d2a5c34d5.jpg)
+![Image](https://i.ibb.co/rfLXBZr/imagen-2022-07-06-025806850.png)
 
 
 
