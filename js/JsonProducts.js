@@ -4,7 +4,7 @@ function addUser(pName, pUrl, pDesc ) {
     let newProduct ={
         name : pName,
         url : pUrl,
-        descripción : pDesc
+        descripcion : pDesc
 
     };
     console.log(newProduct);
