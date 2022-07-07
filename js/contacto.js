@@ -92,7 +92,7 @@ agregar.addEventListener("click", (event) => {
   }
   if (!validarTelefono()) {
     phone.style.border = "red thin solid";
-    lista += "<li>Se debe escribir un telefono válido</li>";
+    lista += "<li>Se debe escribir un teléfono válido</li>";
   } else {
     phone.style.border = "";
   }
@@ -112,7 +112,7 @@ agregar.addEventListener("click", (event) => {
   ) {
     document.getElementById(
       "alertValidacionesTexto"
-    ).innerHTML = `!Los campos deben ser llenados correctamente!;
+    ).innerHTML = `¡Los campos deben ser llenados correctamente!
           <ul>${lista}</ul>`;
     document.getElementById("alertValidaciones").style.display = "block";
 
