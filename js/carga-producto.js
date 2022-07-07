@@ -17,7 +17,7 @@ const alertSuccess = document.getElementById('alertSuccess');
 
 const regProducto  = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const regPrecio    = /^\d+(?:\.\d{1,2})?$/;
-const regDescrip   = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü,.?¿:\s]{20,100}$/;
+const regDescrip   = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü,.?¿:\s]{20,700}$/;
 
 const mandarAlertaSuccess = () => {
     alertSuccess.classList.remove('d-none');
@@ -59,7 +59,7 @@ formulario.addEventListener('submit', e =>{
         precio.classList.add("is-invalid")
         err.push({
             tipo: alertPrecio,
-            msg : "Sólo numeros." 
+            msg : "Sólo números." 
         });
     } else {
         precio.classList.remove("is-invalid");
@@ -96,13 +96,26 @@ formulario.addEventListener('submit', e =>{
         alertImagenes.classList.add("d-none");
     }   
 
+    if (imagenes1.value == "") {
+        
+        imagenes1.classList.add("is-invalid")
+        err.push({
+            tipo: alertImagenes,
+            msg : "Selecciona una imagen" 
+        });
+    } else {
+        imagenes1.classList.remove("is-invalid");
+        imagenes1.classList.add("is-valid");
+        alertImagenes.classList.add("d-none");
+    }
+
     // Validacion Descri 1
     if (!regDescrip.test(descripcion1.value) || !descripcion1.value.trim()) {
         
         descripcion1.classList.add("is-invalid")
         err.push({
             tipo: alertDescripcion1,
-            msg : "De 20 a 100 caracteres, sólo letras." 
+            msg : "De 20 a 500 caracteres, sólo letras." 
         });
     } else {
         descripcion1.classList.remove("is-invalid");
@@ -136,7 +149,7 @@ formulario.addEventListener('submit', e =>{
         '',
         'success'
       )
-   
+      document.getElementById("submit").reset();
 });
 
 let loadProduct = [];
@@ -147,6 +160,7 @@ function addProduct() {
         price : precio.value,
         categorie : category.value,
         img : imagenes.value,
+        img2: imagenes1.value,
         DescriptionOne : descripcion1.value,
         DescriptionTwo : descripcion2.value
 
@@ -168,3 +182,5 @@ document.addEventListener('DOMContentLoaded', (e) => {
         console.log("productos desde localStorage", loadProduct)
     }
 });
+
+console.log(localStorage.getItem("productos"))
