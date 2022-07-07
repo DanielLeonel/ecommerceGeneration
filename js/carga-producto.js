@@ -128,108 +128,42 @@ formulario.addEventListener('submit', e =>{
         mandarAlertaError(err);
         return;
     }
-    console.log("Formulario enviado")
-
-    // Code
-    // saveProduct();
-    // Code
-    // Swal.fire(
-    //     '¡Usuario registrado!',
-    //     '',
-    //     'success'
-    //   )
+    addProduct();
+    
+    Swal.fire(
+        '¡Nuevo producto registrado!',
+        '',
+        'success'
+      )
+   
 });
 
-// let registerList = [];
+let loadProduct = [];
 
-// function addUser(pName, pTel, pCorreo, pContrasena ) {
-//     let newUser ={
-//         name : pName,
-//         tel : pTel,
-//         correo : pCorreo,
-//         contrasena : pContrasena
+function addProduct() {
+    let newProduct ={
+        name : producto.value,
+        price : precio.value,
+        categorie : category.value,
+        img : imagenes.value,
+        DescriptionOne : descripcion1.value,
+        DescriptionTwo : descripcion2.value
 
-//     };
-//     console.log(newUser);
-//     registerList.push(newUser);
+    };
+    console.log(newProduct);
+    loadProduct.push(newProduct);
 
-//     //Guadar en localSorage
-//     localStorage.setItem('usuarios', JSON.stringify(registerList));
+    //Guadar en localSorage
+    localStorage.setItem('productos', JSON.stringify(loadProduct));
 
 
     
-// };
-
-// function saveProduct(){
-//     let sName = document.querySelector("#fullName").value,
-//         sTel = document.querySelector("#phone").value,
-//         sCorreo = document.querySelector("#email").value;
-//         sContrasena = document.querySelector("#password").value;
-// addUser(sName, sTel, sCorreo, sContrasena);
-
-
-
-// };
+};
 
 //Obtener datos de localStorage
 document.addEventListener('DOMContentLoaded', (e) => {
-    if (localStorage.getItem("usuarios")) {
-        registerList = JSON.parse(localStorage.getItem('usuarios'));
-        console.log("usuarios desde localStorage", registerList)
+    if (localStorage.getItem("productos")) {
+        loadProduct = JSON.parse(localStorage.getItem('productos'));
+        console.log("productos desde localStorage", loadProduct)
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// 'use strick'
-
-// console.log("funcionando")
-
-// const formulario = document.querySelector('#formulario')
-// const btnEnviar = document.querySelector('#btnEnviar')
-// const btnCargando = document.querySelector('#btnCargando')
-// const toast = document.querySelector('.toast')
-
-// formulario.addEventListener('submit', e => {
-//     // console.log('me diste click')
-//     e.preventDefault()
-
-//     const datos = new FormData(formulario)
-
-//     console.log('campo nombreProducto', datos.get('nombreProducto'))
-//     console.log('campo urlProducto', datos.get('urlProducto'))
-//     console.log('campo descripcionProducto', datos.get('descripcionProducto'))
-
-//     btnEnviar.classList.add('d-none')
-//     btnCargando.classList.remove('d-none')
-
-//     window.setTimeout(() => {
-
-//         btnEnviar.classList.remove('d-none')
-//         btnCargando.classList.add('d-none')
-
-//         const eventoToast = new bootstrap.Toast(toast)
-//         eventoToast.show()
-
-//     },3000)
-
-//     formulario.reset()
-// })
