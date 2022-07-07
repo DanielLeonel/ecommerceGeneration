@@ -52,13 +52,13 @@ form.addEventListener('submit', (e) =>{
     console.log(registros[0].email)
     if ((objectUser.email == registros[0].email)&&(objectUser.password==registros[0].password)) {
         Swal.fire(
-            '¡Inicio de sesión aceptada.!',
+            '¡Inicio de sesión aceptada!',
             '',
             'success'
           );
     } else{
         Swal.fire(
-            '¡Error en el usuario o contraseña.!',
+            '¡Error en el usuario o contraseña!',
             '',
             'error'
           );
