@@ -17,6 +17,7 @@ const alertSuccess = document.getElementById('alertSuccess');
 
 const regProducto  = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
 const regPrecio    = /^\d+(?:\.\d{1,2})?$/;
+const regDescrip   = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü,.?¿:\s]{20,100}$/;
 
 const mandarAlertaSuccess = () => {
     alertSuccess.classList.remove('d-none');
@@ -96,12 +97,12 @@ formulario.addEventListener('submit', e =>{
     }   
 
     // Validacion Descri 1
-    if (!regProducto.test(descripcion1.value) || !descripcion1.value.trim()) {
+    if (!regDescrip.test(descripcion1.value) || !descripcion1.value.trim()) {
         
         descripcion1.classList.add("is-invalid")
         err.push({
             tipo: alertDescripcion1,
-            msg : "Agregue sólo letras." 
+            msg : "De 20 a 100 caracteres, sólo letras." 
         });
     } else {
         descripcion1.classList.remove("is-invalid");
@@ -111,12 +112,12 @@ formulario.addEventListener('submit', e =>{
 
     
     // Validacion Descri 2
-    if (!regProducto.test(descripcion2.value) || !descripcion2.value.trim()) {
+    if (!regDescrip.test(descripcion2.value) || !descripcion2.value.trim()) {
         
         descripcion2.classList.add("is-invalid")
         err.push({
-            tipo: alertDescripcion1,
-            msg : "Agregue sólo letras." 
+            tipo: alertDescripcion2,
+            msg : "De 20 a 100 caracteres, sólo letras." 
         });
     } else {
         descripcion2.classList.remove("is-invalid");
