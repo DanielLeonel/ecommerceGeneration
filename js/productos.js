@@ -58,7 +58,7 @@ addItem({
     'description':'Diseño ideal para marcas que son diferentes y que buscan resaltar del resto. Una imagen que seguro tus clientes recordarán',
     'precio'     :'699.00'});
 addItem({
-    'name'       :'Introducción y actualización continua',
+    'name'       :'Introducción y actualización',
     'img'        :'./img/productos/prod8img1.jpg',
     'description':'Resolvemos todas tus dudas y te llevamos de la mano en la actualización del diseño para que se adapte a tu marca.',
     'precio'     :'1299.00'});
