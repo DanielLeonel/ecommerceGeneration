@@ -8,7 +8,7 @@ function BarraNavegacion() {
   <div class="container">
     <a href="/" class="navbar-brand">
       <img
-        src="./img/logo-brand.svg"
+        src="./img/logoDesigners.svg"
         height="55"
         alt="MDB Logo"
         loading="lazy"
