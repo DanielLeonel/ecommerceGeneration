@@ -58,17 +58,17 @@ addItem({
     'description':'Diseño ideal para marcas que son diferentes y que buscan resaltar del resto. Una imagen que seguro tus clientes recordarán',
     'precio'     :'699.00'});
 addItem({
-    'name'       :'Introducción y actualización',
+    'name'       :'Introducción y Actualización',
     'img'        :'./img/productos/prod8img1.jpg',
     'description':'Resolvemos todas tus dudas y te llevamos de la mano en la actualización del diseño para que se adapte a tu marca.',
     'precio'     :'1299.00'});
 addItem({
     'name'       :'Administración',
     'img'        :'./img/productos/prod9img1.jpg',
-    'description':'Gestiona tu e-commerce desde un solo lugar, optimiza y administra tu negocio de forma eficiente. Con control total de pago y envíos.',
+    'description':'Gestiona tu ecommerce desde un solo lugar, optimiza y administra tu negocio de forma eficiente. Con control total de pago y envíos.',
     'precio'     :'999.00'});
 addItem({
-    'name'       :'Crecimiento de tu tienda online',
+    'name'       :'Crecimiento de tu Ecommerce',
     'img'        :'./img/productos/prod10img1.jpg',
     'description':'Mejoramos tu estrategia de marketing para mayores ventas y tu visibilidad online',
     'precio'     :'959.00'});
