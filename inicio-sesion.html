@@ -39,8 +39,8 @@
         <div class="container mt-5 justify-content-center">
           <div class="col-12">
             <h1>Inicio de sesión</h1>
-            <section class="alert alert-danger text-center lead d-none">
-              Uppps, no aceptamos campos ni espacios vacíos 👀
+            <section class="alert alert-danger text-center lead d-none" id="camposVacios">
+              Uppps, no aceptamos campos vacíos 👀
             </section>
             <form
               id="form"
@@ -58,6 +58,7 @@
                   placeholder="Escribe tu correo electrónico"
                   class="form-control mb-2"
                 />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertEmail"></p>
               </div>
               <div class="col-12 col-md-12">
                 <label for="password" class="form-label"
@@ -70,6 +71,7 @@
                   placeholder="Escribe tu contraseña"
                   class="form-control"
                 />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertPassword"></p>
               </div>
               <div class="d-grid gap-2">
                 <button 
