@@ -27,14 +27,13 @@ ENGINE = InnoDB;
 
 -- Tabla producto
 CREATE TABLE IF NOT EXISTS `aDesigners`.`producto` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+   `id` INT NOT NULL AUTO_INCREMENT,
   `nombre` VARCHAR(45) NOT NULL,
   `precio` DOUBLE NOT NULL,
-  `descripcion` VARCHAR(1000) NOT NULL,
-  `Caracteristica` VARCHAR(400) NOT NULL,
   `img` VARCHAR(50) NOT NULL,
   `img2` VARCHAR(50) NOT NULL,
-  `img3` VARCHAR(50) NOT NULL,
+  `descripcion` VARCHAR(100) NOT NULL,
+  `descripcion2` VARCHAR(1000) NOT NULL,
   `categoria_id` INT NOT NULL,
   PRIMARY KEY (`id`, `categoria_id`),
   INDEX `fk_producto_categoria1_idx` (`categoria_id` ASC) VISIBLE,
@@ -79,4 +78,5 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
 
