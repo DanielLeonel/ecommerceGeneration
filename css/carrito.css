@@ -54,6 +54,7 @@ nav{
 }
 .foot_ul_responsive{
     text-align: center;
+    font-size: 15px;
 }
 .foot_responsive{
     padding: 2%;
@@ -202,18 +203,19 @@ nav{
    body{
     margin: 0px;
     margin: 0px;
+    
 }
 
 section{
-    margin-top: 150px;
+    margin-top: 10px;
     margin-bottom: 150px;
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 .principal-articulo{
     width: 70%;
-    border: 2px solid black;
-    color: blueviolet;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     height: 300px;
     display: flex;
     justify-content: space-around;
@@ -221,7 +223,7 @@ section{
 
 .principal-articulo-elemento{
     text-align: center;
-    width: 25%;
+    width: 70%;
     margin-top: -2px;
     border: 2px solid rgb(0, 0, 0);
     height: 300px;
@@ -229,19 +231,13 @@ section{
 
 .principal-articulo-element-texto{
     width: 100%;
-    height: 40px;
-}
-.principal-articulo-element-img{
-    width: 100%;
-    height: 250px;
-    background-image: url('../img/quantized.png');
-    background-size: cover;
-    
+    height: 80px; 
+    margin-bottom: -16%;
 }
 
 .contenedor{
-    margin: 50px;
-    padding: 10px;
+    margin: 80px;
+    padding: 20px;
 }
 
 @media only screen and (max-width: 450px){
@@ -250,11 +246,122 @@ section{
         padding: 10px;
     }
     body{
-        font-size: .7rem;
+        font-size: .13rem;
     }
     section{
         margin-top: 100px;
         margin-left: 0px;
+        margin-right: 50%;
     }
     
    }
+   .carrito{
+    /* border: 2px solid rgb(0, 0, 0); */
+    background-color:rgb(255, 255, 255);
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+   .productocarrito{
+    border: 0.1px solid rgba(0, 0, 0, 0.199);
+    border-width: thin;
+    width: 500%;
+    height: 300px;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    text-align: center;
+      }
+      #img{
+        width: 300px;
+        height: 250px;
+        margin-top: 8%;
+      }            
+.Total{
+    margin-top: -2%;
+}
+#texto1{
+    margin-left: 80%;
+}
+#texto2{
+    margin-left: 80%;
+}
+#enviar{
+    width: 100%;
+    height: 50px;
+    margin: 5%;
+    margin-left: 5%;
+}
+.precio{
+    margin-top: 10%;
+}
+#totalpagar{
+    margin-left: 150%;
+    margin-top: -10%;
+}
+#total{
+    margin-left: 65%;
+    margin-top: -15%;
+}
+@media only screen and (max-width: 400px){
+    .productocarrito{
+        border: 0.1px solid rgba(0, 0, 0, 0.199);
+        border-width: thin;
+        width: 180%;
+        height: 250px;
+        margin-bottom: 10%;
+        margin-left: 10%;
+        text-align: center;
+          }
+          #img{
+            width: 200px;
+            height: 150px;
+            margin-top: 5%;
+          }            
+    .Total{
+        margin-top: -2%;
+    }
+    #boton{
+        margin-top: -2%;
+        font-size: 20px;
+        margin-left:-30%;
+        margin-right: 5px;
+    }
+    .carrito{
+        /* border: 2px solid rgb(0, 0, 0); */
+        background-color:rgb(255, 255, 255);
+        margin-top: 5%;
+        margin-bottom: 5%;
+       }
+       #enviar{
+        width: 180%;
+        height: 50px;
+        margin: 5%;
+        margin-left: -90%;
+    }
+
+    .principal-articulo-element-texto{
+        width: 100%;
+        height: 80px; 
+        margin-bottom: -16%;
+        font-size: 20px;
+    }
+    .precio{
+        font-size: 20px;
+    }
+    .cantidad{
+        font-size: 20px;
+        margin-left: 80%;
+    }
+    #texto1{
+        margin-left: 60%;
+    }
+    .Total{
+        font-size: 20px;
+   }
+   .carrito{
+    margin-left: 20%;
+    font-size: 15px;
+   }
+   #title{
+    width: 300px;
+   }
+}
