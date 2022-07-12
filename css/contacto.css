@@ -118,20 +118,10 @@ nav{
         visibility:hidden;
     }
 }
-/*Formulario*/
-.toast {
-    position: absolute;
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
+
 
 .alto{
-    height: 650px;
+
     margin: auto;
 }
 
-
-/* #alertValidaciones{
-    height:160px; 
-    width:800px;
-} */
