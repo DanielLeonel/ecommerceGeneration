@@ -317,14 +317,20 @@ section{
             margin-top: 5%;
           }            
     .Total{
-        margin-top: -2%;
+        margin-top: 3px;
+        margin-left: auto;
     }
-    #boton{
+    #total{
+        margin-top: 3px;
+        margin-left: -175%;
+    }
+    /* #button{
         margin-top: -2%;
         font-size: 20px;
         margin-left:-30%;
         margin-right: 5px;
-    }
+        width: 350px;
+    } */
     .carrito{
         /* border: 2px solid rgb(0, 0, 0); */
         background-color:rgb(255, 255, 255);
@@ -332,10 +338,10 @@ section{
         margin-bottom: 5%;
        }
        #enviar{
-        width: 180%;
+        width: 550%;
         height: 50px;
         margin: 5%;
-        margin-left: -90%;
+        margin-left: -360%;
     }
 
     .principal-articulo-element-texto{
