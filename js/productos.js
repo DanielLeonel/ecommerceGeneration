@@ -1,6 +1,6 @@
 producto = JSON.parse(localStorage.getItem(`productos`));
 if (producto == undefined) {
-      console.log("Error al acceder a los productos")
+      
 
       'use strick'
 
