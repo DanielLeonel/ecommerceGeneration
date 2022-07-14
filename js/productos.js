@@ -1,113 +1,79 @@
-producto = JSON.parse(localStorage.getItem(`productos`));
-if (producto == undefined) {
-      
+let productos;
+// Aquí se debe cambiar el URL del servicio en el BackEnd
+const URL_MAIN = 'http://localhost:8080/api/products/';
+function addItems(div_Productos) {
+    fetch(URL_MAIN, {
+        method: 'get'
+    }).then(function (response) {
+        response.json().then(function (json) {
+            console.log(json);
+            console.log(json.length);
+            productos = json;
+            Array.from(json).forEach((p) => {
+                div_Productos.innerHTML += `
+        <div class="col-12 col-md-4 mb-5 px-2">
+        <div class="card">
+        <a id = "${p.id}" href="http://127.0.0.1:5501/articulo.html">
+          <img src="img/${p.img}" class="card-img-top" alt="..." />
+          </a>
+              <div class="card-body">
+              <h5 class="card-title" id="productTitleModal">${p.nombre}</h5>
+              <p class="card-text" id"productBodyModal">${p.descripcion}</p>
+              <div class="card-body">
+                    <h2 class="my-2">$${p.precio} .MXN</h2>
+              </div>\
+              <div class="d-grid gap-2">
+              <button class="btn btn-primary" id="${p.id}">Comprar</button>
+              </div>
+           </div>
+         </div>
+        </div>`;
+            }); // foreach
+        });//then
+    }).catch(function (err) {
+        console.log(err);
+    });
 
-      'use strick'
+}// addItems
 
-function addItem(item){
-      const itemHTML = 
-      '<div class="col-12 col-md-4 mb-5 px-2">\n' +
-      '<div class="card">\n' +
-        '<img src="' + item.img + '" class="card-img-top" alt="..." />\n' +
-            '<div class="card-body">\n' +
-            '<h5 class="card-title">' + item.name + '</h5>\n' +
-            '<p class="card-text">' + item.description + '</p>\n' +
-            '<div class="card-body">\n' +
-                  '<h2 class="my-2">$' + item.precio + '</h2>\n' +
-            '</div>\n' +
-            '<div class="d-grid gap-2">\n' +
-            '<button class="btn btn-primary" id="'+item.id+'">Comprar</button>\n' +
-            '</div>\n' +
-         '</div>\n' +
-       '</div>\n' +
-      '</div>';
-      
-      const itemsContainer = document.getElementById("productosItems");
-      itemsContainer.innerHTML += itemHTML;
-  }
+window.addEventListener("load", function () {
+    let div = document.getElementById("productosItems");
+    addItems(div);
+});
 
-  addItem({
-    'name'       :'Linear Style',
-    'id'         : '1',
-    'img'        :'./img/productos/prod1img1.jpg',
-    'description':'Diseño simple, que hará que tu marca resalte por si misma.',
-    'precio'     :'799.00'});
-addItem({
-    'name'       :'Naturaleza Calm Elements',
-    'id'         : '2',
-    'img'        :'./img/productos/prod2img1.jpg',
-    'description':'Diseño ideal para productos de belleza, cuidado y orgánicos.',
-    'precio'     :'899.00'});
-addItem({
-    'name'       :'Landing Word',
-    'id'         : '3',
-    'img'        :'./img/productos/prod3img1.jpg',
-    'description':'Cualquier producto queda bien en este diseño, es todo lo que necesitas.',
-    'precio'     :'899.00'});
-addItem({
-    'name'       :'Simple Store',
-    'id'         : '4',
-    'img'        :'./img/productos/prod4img1.jpg',
-    'description':'Diseño fresco, ideal para productos tecnológicos, intuitivo y llamativo. Para un cliente joven.',
-    'precio'     :'599.00'});
-addItem({
-    'name'       :'Creative Spark',
-    'id'         : '5',
-    'img'        :'./img/productos/prod5img1.jpg',
-    'description':'Con catálogo integrado y filtros diseñados para que tus productos se muestren de la mejor manera.',
-    'precio'     :'799.00'});
-addItem({
-    'name'       :'Creative Dining',
-    'id'         : '6',
-    'img'        :'./img/productos/prod6img1.jpg',
-    'description':'Tu menú, pedidos y reservaciones en un mismo lugar, con un diseño totalmente adaptable a tu marca.',
-    'precio'     :'999.00'});
-addItem({
-    'name'       :'Technology Light',
-    'id'         : '7',
-    'img'        :'./img/productos/prod7img1.jpg',
-    'description':'Diseño ideal para marcas que son diferentes y que buscan resaltar del resto. Una imagen que seguro tus clientes recordarán',
-    'precio'     :'699.00'});
-addItem({
-    'name'       :'Introducción y Actualización',
-    'id'         : '8',
-    'img'        :'./img/productos/prod8img1.jpg',
-    'description':'Resolvemos todas tus dudas y te llevamos de la mano en la actualización del diseño para que se adapte a tu marca.',
-    'precio'     :'1299.00'});
-addItem({
-    'name'       :'Administración',
-    'id'         : '9',
-    'img'        :'./img/productos/prod9img1.jpg',
-    'description':'Gestiona tu ecommerce desde un solo lugar, optimiza y administra tu negocio de forma eficiente. Con control total de pago y envíos.',
-    'precio'     :'999.00'});
-addItem({
-    'name'       :'Crecimiento de tu Ecommerce',
-    'id'         : '10',
-    'img'        :'./img/productos/prod10img1.jpg',
-    'description':'Mejoramos tu estrategia de marketing para mayores ventas y tu visibilidad online',
-    'precio'     :'959.00'});
+function view(index) {
+    // console.log(index);
+    // console.table(productos[index]);
+    document.getElementById("productTitleModal").innerHTML = productos[index].nombre;
+    document.getElementById("productBodyModal").innerHTML = `${productos[index].descripcion}  <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].img}" />
+<strong>$ ${productos[index].precio} MXN<strong>`;
+    $("#productModal").modal("show");
+}// view
 
 
-}else{
-      for (let index = 0; index < producto.length; index++) {
-            document.getElementById("productosItems").innerHTML+= 
-            `<div class="col-12 col-md-4 mb-5 px-2">
-                  <div class="card"> 
-                  <a href="articulo.html" id="${index}"><img src=" ${producto[index].img} " class="card-img-top" alt="..." /></a>
-                        <div class="card-body">
-                        <h5 class="card-title">  ${producto[index].name}  </h5>
-                        <p class="card-text"> ${producto[index].DescriptionOne} </p> 
-                        <div class="card-body">
-                              <h2 class="my-2">$ ${producto[index].price} </h2> 
-                        </div>
-                        <div class="d-grid gap-2">
-                              <button class="btn btn-primary">Comprar</button>
-                        </div>
-                     </div>
-                   </div>
-                  </div>`;
-        }
-}
+
+/////// El siguiente código agrega un nuevo producto mediante un POST
+// const data =     {nombre: "Cuaderno doble raya",
+//     descripcion: "Cuaderno doble raya Norma",
+//     price: 56.0,
+//     url_Imagen: "cuadernodobleraya.jpg"
+// };
+
+// fetch(URL_MAIN, {
+//   method: 'POST', // or 'PUT'
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(data),
+// })
+// .then(response => response.json())
+// .then(data => {
+//   console.log('Success:', data);
+// })
+// .catch((error) => {
+//   console.error('Error:', error);
+// });
+
 
 
 

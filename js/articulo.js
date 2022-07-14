@@ -1,5 +1,5 @@
 id = 0;
-producto = JSON.parse(localStorage.getItem(`productos`));
+producto = JSON.parse(localStorage.getItem(`elementostabla`));
 function id (id){
 this.id=id;
 };
@@ -15,7 +15,6 @@ this.id=id;
 // };
    
 document.body.innerHTML+= 
-
     `<section class="banner bg-white">
         <div class="container">
         <div class="row align-items-center justify-content-between">

@@ -1,129 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="./css/registro..css" />
-    <title>Registro de usuario</title>
-  </head>
-  <body>
-    <div id="BarraNavegacion"><!--Barra de navejación en JS--></div>
-    <main>
-      <div class="container d-flex justify-content-center mt-5">
-        <div class="row alto align-items-center">
-          <div class="d-none d-sm-block col-md-12">
-            <img
-              class="img-fluid"
-              src="./img/Abstraction.svg"
-              alt="Imagen Registro"
-              width="1000px"
-              height="auto"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="row alto align-items-center justify-content-center">
-            <div class="col-12">
-              <form
-                id="formulario"
-                class="row g-3 contact-form mt-5"
-                novalidate
-              >
-                <h1>Registro</h1>
-                <div class="col-12 col-md-12">
-                  <label class="form-label"
-                    >Nombre completo</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="fullName"
-                    name="fullName"
-                    minlength="2"
-                    placeholder="Bruce Wayne"
-                    required
-                  />
-                  <p class="alert alert-danger text-danger my-2 d-none" id="alertFullName"></p>
-                </div>
-                <div class="col-12 col-md-12">
-                  <label class="form-label"
-                    >Teléfono</label
-                  >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="1234567890"
-                    required
-                  />
-                  <p class="alert alert-danger text-danger my-2 d-none" id="alertPhone"></p>
-                </div>
-                <div class="col-12 col-md-12">
-                  <label for="email" class="form-label"
-                    >Correo Electrónico</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    name="email"
-                    placeholder="bruce@adesigner.com"
-                    required
-                  />
-                  <p class="alert alert-danger text-danger my-2 d-none" id="alertEmail"></p>
-                </div>
-                <div class="col-12 col-md-12">
-                  <label for="password" class="form-label"
-                    >Contraseña</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    name="password"
-                    placeholder="********"
-                    required
-                  />
-                  <p class="alert alert-danger text-danger my-2 d-none" id="alertPassword"></p>
-                  <div class="mt-5 pb-5">
-                    <button class="btn btn-primary w-100" type="submit">
-                      Regístrate
-                    </button>
-                  </div>
-                </div>
 
-              </form>
-              <div class="alert alert-success my-2 text-center pb-5 d-none" id="alertSuccess">
-                Usuario registrado con éxito.
-            </div>
-            </div>
-          </div>
-          `
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="./css/registro..css" />
+  <title>Registro de usuario</title>
+</head>
+
+<body>
+  <div id="BarraNavegacion">
+    <!--Barra de navejación en JS-->
+  </div>
+  <main>
+    <div class="container d-flex justify-content-center mt-5">
+      <div class="row alto align-items-center">
+        <div class="d-none d-sm-block col-md-12">
+          <img class="img-fluid" src="./img/Abstraction.svg" alt="Imagen Registro" width="1000px" height="auto" />
         </div>
       </div>
-    </main>
+      <div class="row">
+        <div class="row alto align-items-center justify-content-center">
+          <div class="col-12">
+            <form id="formulario" class="row g-3 contact-form mt-5" novalidate>
+              <h1>Registro</h1>
+              <div class="col-12 col-md-12">
+                <label class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" minlength="2"
+                  placeholder="Bruce Wayne" required />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertFullName"></p>
+              </div>
+              <div class="col-12 col-md-12">
+                <label class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="1234567890" required />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertPhone"></p>
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="bruce@adesigner.com"
+                  required />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertEmail"></p>
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="********"
+                  required />
+                <p class="alert alert-danger text-danger my-2 d-none" id="alertPassword"></p>
+                <div class="mt-5 pb-5">
+                  <button class="btn btn-primary w-100" type="submit">
+                    Regístrate
+                  </button>
+                </div>
+              </div>
 
-    <div id="PieDePagina"><!--Pie de página en JS--></div>
-    <!-- <script src="./js/registro.js"></script> -->
-    <script src="./js/regexRegistro.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script
-      src="https://kit.fontawesome.com/a2fde8c980.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/navbar.js"></script>
-  </body>
+            </form>
+            <div class="alert alert-success my-2 text-center pb-5 d-none" id="alertSuccess">
+              Usuario registrado con éxito.
+            </div>
+          </div>
+        </div>
+        `
+      </div>
+    </div>
+  </main>
+
+  <div id="PieDePagina">
+    <!--Pie de página en JS-->
+  </div>
+  <!-- <script src="./js/registro.js"></script> -->
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/a2fde8c980.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./js/navbar.js"></script>
+  <!-- <script src="./js/regexRegistro.js"></script> -->
+  <!-- <script src="./js/Registro.js"></script> -->
+  <script src="./js/regexRegistro.js"></script>
+</body>
+
 </html>
