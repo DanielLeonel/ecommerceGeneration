@@ -20,8 +20,8 @@ function addItems(div_Productos) {
               <h5 class="card-title" id="productTitleModal">${p.nombre}</h5>
               <p class="card-text" id"productBodyModal">${p.descripcion}</p>
               <div class="card-body">
-                    <h2 class="my-2">$${p.precio} .MXN</h2>
-              </div>\
+                    <h2 class="my-2 card-price">$${p.precio} .MXN</h2>
+              </div>
               <div class="d-grid gap-2">
               <button class="btn btn-primary" id="${p.id}">Comprar</button>
               </div>
