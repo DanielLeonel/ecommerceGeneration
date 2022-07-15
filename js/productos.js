@@ -13,15 +13,15 @@ function addItems(div_Productos) {
                 div_Productos.innerHTML += `
         <div class="col-12 col-md-4 mb-5 px-2">
         <div class="card">
-        <a id = "${p.id}" href="http://127.0.0.1:5501/articulo.html">
-          <img src="img/${p.img}" class="card-img-top" alt="..." />
-          </a>
+
+          <img src="img/${p.img}" class="click" id = "${p.id}" alt="..." />
+
               <div class="card-body">
-              <h5 class="card-title" id="productTitleModal">${p.nombre}</h5>
-              <p class="card-text" id"productBodyModal">${p.descripcion}</p>
+              <h5 class="card-title" id="productTitleModal" class"click">${p.nombre}</h5>
+              <p class="card-text" id="productBodyModal">${p.descripcion}</p>
               <div class="card-body">
-                    <h2 class="my-2 card-price">$${p.precio} .MXN</h2>
-              </div>
+                    <h2 class="my-2">$${p.precio} .MXN</h2>
+              </div>\
               <div class="d-grid gap-2">
               <button class="btn btn-primary" id="${p.id}">Comprar</button>
               </div>
@@ -33,6 +33,8 @@ function addItems(div_Productos) {
     }).catch(function (err) {
         console.log(err);
     });
+
+
 
 }// addItems
 
@@ -49,7 +51,23 @@ function view(index) {
 <strong>$ ${productos[index].precio} MXN<strong>`;
     $("#productModal").modal("show");
 }// view
-
+setTimeout(function(){
+    document.querySelectorAll(".click").forEach(el => {
+        el.addEventListener("click", e => {
+          let id ={
+            id : e.target.getAttribute("id")
+          } ;
+          console.log("Se ha clickeado el id "+id);
+          
+          localStorage.removeItem("id");
+          localStorage.setItem("id", JSON.stringify(id));
+          setTimeout(function(){
+            window.open("http://127.0.0.1:5501/articulo.html","_self")
+          },200);
+          
+        });
+      });
+  },1000);
 
 
 /////// El siguiente código agrega un nuevo producto mediante un POST

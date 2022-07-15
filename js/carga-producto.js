@@ -3,6 +3,7 @@ const producto = document.getElementById('producto');
 const precio = document.getElementById('precio');
 const category = document.getElementById('category');
 const imagenes = document.getElementById('imagenes');
+const imagenes2 = document.getElementById('imagenes1');
 const descripcion1 = document.getElementById('descripcion1');
 const descripcion2 = document.getElementById('descripcion2');
 
@@ -143,13 +144,13 @@ formulario.addEventListener('submit', e =>{
         return;
     }
     addProduct();
-    
+    postProduct();
     Swal.fire(
         '¡Nuevo producto registrado!',
         '',
         'success'
       )
-      document.getElementById("submit").reset();
+      formulario.reset();
 });
 
 let loadProduct = [];
@@ -160,7 +161,7 @@ function addProduct() {
         price : precio.value,
         categorie : category.value,
         img : imagenes.value,
-        img2: imagenes1.value,
+        img2: imagenes2.value,
         DescriptionOne : descripcion1.value,
         DescriptionTwo : descripcion2.value
 
@@ -183,4 +184,39 @@ document.addEventListener('DOMContentLoaded', (e) => {
     }
 });
 
-console.log(localStorage.getItem("productos"))
+/* console.log(localStorage.getItem("productos")) */
+
+function postProduct(){
+    let pProduct = document.getElementById("producto").value;
+    let pPrecio = document.getElementById("precio").value;
+    let pCategory = document.getElementById("category").value;
+    let pImagenes = document.getElementById("imagenes").value;
+    let pImagenes2 = document.getElementById("imagenes1").value;
+    let pDescripcion1 = document.getElementById("descripcion1").value;
+    let pDescripcion2 = document.getElementById("descripcion2").value;
+
+    
+    var url = 'http://localhost:8080/api/products/';
+    var data = {nombre: pProduct ,
+        precio: pPrecio,
+        categoria_id: pCategory,
+        img: pImagenes , 
+        img2: pImagenes2,
+        descripcion: pDescripcion1 ,
+        descripcion2: pDescripcion2};
+    
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      body: JSON.stringify(data), // data can be `string` or {object}!
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    })};
